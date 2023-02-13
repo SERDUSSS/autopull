@@ -1,7 +1,7 @@
 count=0
-times=exec python rand.py
+$time=`python rand.py`
 
-while [$counter -le $times]
+while [$counter -le $time]
 do
 	python main.py
 	git add *

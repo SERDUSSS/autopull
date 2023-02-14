@@ -5,6 +5,6 @@ while [$counter -le $time]
 do
 	python main.py
 	git add *
-	git commit
+	git commit -am auto
 	git push
 done

@@ -1,10 +1,13 @@
 count=0
 $time=`python rand.py`
+$counter = 1
 
-while [$counter -le $time]
+while [$h -le $u]
 do
 	python main.py
-	git add *
-	git commit -am auto
-	git push
+	git add * > /dev/null
+	git commit -am auto > /dev/null
+	git push /dev/null
+	echo $counter
+	counter = $counter + 1
 done

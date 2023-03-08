@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for ((i=0; i<=$1; i++));
+for ((i=1; i<=$1; i++));
 do
 	git add * >/dev/null 2>&1
 	git commit -am auto >/dev/null 2>&1
